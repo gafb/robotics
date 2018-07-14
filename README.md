@@ -1,2 +1,2 @@
 # robotics
-Projeto de robótica para disciplina
+Projeto para disciplina de robótica Cin-UFPE
