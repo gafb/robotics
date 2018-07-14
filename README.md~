@@ -88,3 +88,6 @@ rosnode info goTo.py
 
 rostopic type /amcl_pose
 geometry_msgs/PoseWithCovarianceStamped
+
+mkdir msg
+
