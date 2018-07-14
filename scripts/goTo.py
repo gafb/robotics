@@ -16,19 +16,19 @@ def movebase_client():
         goal.target_pose.header.stamp = rospy.Time.now()
         
         if (sys.argv[1] == "room0"):
-            goal.target_pose.pose.position.x = 0.47985
-            goal.target_pose.pose.position.y = 8.5738
+            goal.target_pose.pose.position.x = -0.222061890754
+            goal.target_pose.pose.position.y = 8.77443683017
             goal.target_pose.pose.position.z = 0
-            goal.target_pose.pose.orientation.z = -5.0
-            goal.target_pose.pose.orientation.w = 0
+            goal.target_pose.pose.orientation.z = 0.992164857537
+            goal.target_pose.pose.orientation.w = 0.124935565268
 
         elif (sys.argv[1] == "room1"):
             goal.target_pose.pose.position.x = -0.561584992267
             goal.target_pose.pose.position.y = 1.82561917372
             goal.target_pose.pose.orientation.x = 0.0
             goal.target_pose.pose.orientation.y = 0.0
-            goal.target_pose.pose.orientation.z = -0.999159763689
-            goal.target_pose.pose.orientation.w = 0.040984956071
+            goal.target_pose.pose.orientation.z = 0.993022598671
+            goal.target_pose.pose.orientation.w = 0.117924206712
 
         elif (sys.argv[1] == "room2"):
             goal.target_pose.pose.position.x = 2.72958946936

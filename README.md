@@ -58,7 +58,7 @@ rostopic list (check if the closest_person topic was created, if so is legen...w
 
 6º Step (Optional):
 
-Move robot with `rosrun robotics goTo.py roomX` or `rosrun key_teleop key_teleop.py` to see the rostopic echo closest_person showing the values of the topic
+Move robot with `rosrun robotics goTo.py room[X]` or `rosrun key_teleop key_teleop.py` to see the rostopic echo closest_person showing the values of the topic
 
 Detect people:
 
@@ -69,7 +69,18 @@ Must run:
 
 `rosrun robotics person.py`
 
+## Recognize objects
 
+1º Step:
+Be on: ../robotics/scripts folder
+
+2º Step:
+`rosrun robotics feat_match.py cocacola.jpg` (The jpg file is the object that he will try to compare)
+
+3º Step
+`rostopic echo vision_object`
+Optional:
+`rosrun robotics feat_match_bkp.py "cocacola.jpg" "image.png"` Compare two images
 __________________
 Links:
 1. http://wiki.ros.org/Robots/TIAGo/Tutorials/Installation/TiagoSimulation
@@ -80,10 +91,10 @@ __________________
 
 Show commands:(running gazebo)
 
-rostopic echo -c /amcl_pose
-rostopic info /amcl_pose
-rostopic list
-rosnode info goTo.py
+`rostopic echo -c /amcl_pose `
+`rostopic info /amcl_pose `
+`rostopic list`
+`rosnode info goTo.py `
 
 
 rostopic type /amcl_pose
